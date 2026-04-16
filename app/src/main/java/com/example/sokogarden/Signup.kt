@@ -42,7 +42,7 @@ class Signup : AppCompatActivity() {
 //        On click of the signup button we want to register a person
         signupButton.setOnClickListener {
 //            Specify a
-            val api = "https://kbenkamotho.alwaysdata.net/api/signup"
+            val api = "https://serena080.alwaysdata.net/api/signup"
 
 
 //            Create a request params = container that will hold all the data

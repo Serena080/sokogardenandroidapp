@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:orientation="vertical"
+    android:background="#C0C0C0">
+
+<!--    Below is a card view-->
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        app:cardCornerRadius="25dp"
+        android:layout_marginTop="50dp"
+        android:backgroundTint="#735757"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        app:cardElevation="10dp"
+        android:padding="10dp">
+
+<!--        Below is another linear layout of how the contents will be aligned is the carview-->
+        
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:padding="8dp">
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/product_name"
+                android:text="Product Name"
+                android:textSize="28sp"
+                android:textColor="#000"
+                android:textAlignment="center"
+                android:fontFamily="cursive"
+                android:textStyle="bold"/>
+
+<!--            Below is a product image-->
+            
+            <ImageView
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:id="@+id/product_photo"
+                android:src="@mipmap/ic_launcher"
+                android:scaleType="centerCrop"
+                android:layout_marginTop="10dp"/>
+
+<!--            Below is a text view for the product cost-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/product_cost"
+                android:text="KSH 500"
+                android:textAlignment="center"
+                android:layout_marginTop="10dp"
+                android:textSize="28sp"
+                android:textColor="#000"
+                android:textStyle="bold"/>
+
+<!--            Below is a textview-->
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/product_description"
+                android:text="the text description will appear here"
+                android:textSize="20sp"
+                android:textColor="#000"
+                android:layout_marginLeft="10dp"
+                android:layout_marginTop="8dp"/>
+
+
+<!--            The purchase now button -->
+            <Button
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/btnPurchase"
+                android:text="Purchase Now"
+                android:backgroundTint="#E20E0E"
+                android:layout_marginTop="8dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="50dp"
+                android:textSize="25sp"/>
+
+
+
+
+        </LinearLayout>
+
+    </androidx.cardview.widget.CardView>
+
+</LinearLayout>
