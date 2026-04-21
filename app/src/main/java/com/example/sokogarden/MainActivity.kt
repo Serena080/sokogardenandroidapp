@@ -110,5 +110,16 @@ class MainActivity : AppCompatActivity() {
             startActivity(Intent(this, MainActivity::class.java))
             finish()
         }
+
+
+//        Have the about button and have the intent
+        val aboutButton = findViewById<Button>(R.id.aboutBtn)
+
+
+//        Below is the intent
+        aboutButton.setOnClickListener {
+            val intent = Intent(applicationContext, AboutActivity ::class.java)
+            startActivity(intent)
+        }
     }
 }
