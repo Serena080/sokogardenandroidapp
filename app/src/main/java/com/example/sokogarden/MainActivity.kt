@@ -58,7 +58,7 @@ class MainActivity : AppCompatActivity() {
 
 
 //specify the API URL endpoint for fetching the products (alwaysData)
-        val url = "https://kbenkamotho.alwaysdata.net/api/get_products"
+        val url = "https://serena080.alwaysdata.net/api/add_product"
 
 
 

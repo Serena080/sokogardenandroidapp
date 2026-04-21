@@ -49,7 +49,7 @@ class PaymentActivity : AppCompatActivity() {
 
 
 //        Specify the image url
-        val imageUrl = "https://kbenkamotho.alwaysdata.net/static/images/$.product_photo"
+        val imageUrl = "https://serena080.alwaysdata.net/static/images/$product_photo"
 
 //Load image using Glide, Load Faster with Glide
         Glide.with(this)
@@ -65,7 +65,7 @@ class PaymentActivity : AppCompatActivity() {
 //        Set click listener on the button
         btnPay.setOnClickListener {
 //            Specify the url
-            var url = "https://kbenkamotho.alwaysdata.net/api/mpesa_payment"
+            var url = "https://serena080.alwaysdata.net/api/mpesa_payment"
 
 
             val data = RequestParams()
